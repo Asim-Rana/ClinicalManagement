@@ -94,43 +94,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
-    <Content Include="ApplicationInsights.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="app\scripts\vendor\angular.min.js.map" />
-    <Content Include="app\scripts\vendor\angular-route.min.js.map" />
-    <Content Include="app\scripts\vendor\angular-animate.min.js.map" />
-    <Content Include="app\scripts\vendor\angular-resource.min.js.map" />
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
+    <Content Include="app\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="app\scripts\app.js" />
-    <Content Include="app\styles\animate.css" />
-    <Content Include="app\styles\bootstrap.min.css" />
-    <Content Include="app\styles\datepicker.css" />
-    <Content Include="app\styles\font-awesome.min.css" />
-    <Content Include="app\styles\introLoader.min.css" />
-    <Content Include="app\styles\owl.carousel.css" />
-    <Content Include="app\styles\Site.css" />
-    <Content Include="app\styles\style.css" />
-    <Content Include="index.html" />
+    <Content Include="app\scripts\controllers\AboutController.js" />
+    <Content Include="app\scripts\controllers\ContactController.js" />
+    <Content Include="app\scripts\controllers\FeedbackController.js" />
+    <Content Include="app\scripts\controllers\HomeController.js" />
+    <Content Include="app\scripts\controllers\ServiceController.js" />
     <Content Include="app\scripts\vendor\ai.0.15.0-build58334.js" />
     <Content Include="app\scripts\vendor\ai.0.15.0-build58334.min.js" />
-    <Content Include="app\scripts\vendor\angular-animate.js" />
-    <Content Include="app\scripts\vendor\angular-animate.min.js" />
-    <Content Include="app\scripts\vendor\angular-mocks.js" />
-    <Content Include="app\scripts\vendor\angular-resource.js" />
-    <Content Include="app\scripts\vendor\angular-resource.min.js" />
-    <Content Include="app\scripts\vendor\angular-route.js" />
-    <Content Include="app\scripts\vendor\angular-route.min.js" />
-    <Content Include="app\scripts\vendor\angular.js" />
-    <Content Include="app\scripts\vendor\angular.min.js" />
     <Content Include="app\scripts\vendor\bootstrap.min.js" />
     <Content Include="app\scripts\vendor\datepicker.js" />
     <Content Include="app\scripts\vendor\html5shiv.js" />
@@ -141,17 +113,42 @@
     <Content Include="app\scripts\vendor\respond.min.js" />
     <Content Include="app\scripts\vendor\script.js" />
     <Content Include="app\scripts\vendor\smoothscroll.js" />
+    <Content Include="app\styles\animate.css" />
+    <Content Include="app\views\about.html" />
+    <Content Include="app\views\contact.html" />
+    <Content Include="app\views\feedback.html" />
+    <Content Include="app\views\home.html" />
+    <Content Include="app\views\services.html" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="app\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="app\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\styles\datepicker.css" />
+    <Content Include="app\styles\introLoader.min.css" />
+    <Content Include="app\styles\owl.carousel.css" />
+    <Content Include="app\styles\Site.css" />
+    <Content Include="app\styles\style.css" />
+    <Content Include="index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\fonts\" />
     <Folder Include="app\images\" />
-    <Folder Include="app\scripts\controllers\" />
     <Folder Include="app\scripts\services\" />
-    <Folder Include="app\views\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

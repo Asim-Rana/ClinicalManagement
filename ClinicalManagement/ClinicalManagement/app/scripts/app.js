@@ -1,43 +1,32 @@
-﻿var mainApp = angular.module('mainApp', ['ngRoute', 'clinicControllers']);
+﻿var mainApp = angular.module('app', ['ngRoute', 'controllers']);
 
 mainApp.config([
     '$routeProvider',
     function ($routeProvider) {
+        
         $routeProvider.
             when('/', {
-                templateUrl : 'views/home.html',
-                controller  : 'mainController'
+                templateUrl : 'app/views/home.html',
+                controller: 'HomeController'
             })
 
             .when('/about', {
-                templateUrl: 'views/about.html',
-                controller  : 'aboutController'
+                templateUrl: 'app/views/about.html',
+                controller: 'AboutController'
             })
             .when('/services', {
-                templateUrl: 'views/services.html',
-                controller: 'serviceController'
-            })
-
-            .when('/appointment', {
-                templateUrl: 'views/appointment.html',
-                controller: 'appointmentController'
+                templateUrl: 'app/views/services.html',
+                controller: 'ServiceController'
             })
 
             .when('/contact', {
-                templateUrl: 'views/contact.html',
-                controller: 'contactController'
+                templateUrl: 'app/views/contact.html',
+                controller: 'ContactController'
             })
-
-            .when('/login', {
-                templateUrl: 'views/login.html',
-                controller: 'loginController'
+            .when('/feedback', {
+                templateUrl: 'app/views/feedback.html',
+                controller: 'FeedbackController'
             })
-
-            .when('/signup', {
-                templateUrl: 'views/signup.html',
-                controller: 'signupController'
-            })
-
             .otherwise({
                 redirectTo: '/'
             });

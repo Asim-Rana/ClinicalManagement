@@ -1,14 +1,3 @@
-/********************
-===============================================================
- Template Name : Medihere - Responsive Bootstrap HTML Medical Template
- Template URI : http://mostafiz.me/demo/medihere
- Author : Mostafizur Rahman
- Autor URI : http://mostafiz.me
- Version : 1.0
-===============================================================
-******************/
-
-
 /*Styles starts here*/
 
 html,
@@ -1599,6 +1588,9 @@ span.heading-nav a:hover {
     border-color: #2B96CC;
 }
 
+
+
+
 /***************************
     services page styles
 ************************/
@@ -1817,3 +1809,4 @@ span.heading-nav a:hover {
         padding-bottom: 20px !important;
     }
 }
+

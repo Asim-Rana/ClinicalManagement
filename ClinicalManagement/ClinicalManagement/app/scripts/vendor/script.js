@@ -1,6 +1,6 @@
 (function ($) {
     $(document).ready(function () {
-
+        
         //Preloader JS
         $("#element").introLoader();
 
@@ -11,8 +11,6 @@
             if ($(this).attr("href") == pgurl || $(this).attr("href") == '')
                 $(this).addClass("active");
         });
-
-
         // fixed header
         $(window).scroll(function () {
 

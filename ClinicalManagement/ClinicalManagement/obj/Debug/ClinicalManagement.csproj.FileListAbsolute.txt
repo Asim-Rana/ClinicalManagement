@@ -31,3 +31,36 @@ c:\users\asim.irshad\documents\visual studio 2015\Projects\ClinicalManagement\Cl
 c:\users\asim.irshad\documents\visual studio 2015\Projects\ClinicalManagement\ClinicalManagement\obj\Debug\ClinicalManagement.csprojResolveAssemblyReference.cache
 c:\users\asim.irshad\documents\visual studio 2015\Projects\ClinicalManagement\ClinicalManagement\obj\Debug\ClinicalManagement.dll
 c:\users\asim.irshad\documents\visual studio 2015\Projects\ClinicalManagement\ClinicalManagement\obj\Debug\ClinicalManagement.pdb
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\ApplicationInsights.config
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\roslyn\csc.exe
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\roslyn\vbc.exe
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\roslyn\VBCSCompiler.exe
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\ClinicalManagement.dll.config
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\ClinicalManagement.dll
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\ClinicalManagement.pdb
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\Microsoft.AI.Web.dll
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\Microsoft.ApplicationInsights.dll
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\Microsoft.AI.Web.xml
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\Microsoft.ApplicationInsights.xml
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\obj\Debug\ClinicalManagement.dll
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\obj\Debug\ClinicalManagement.pdb
+C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\obj\Debug\ClinicalManagement.csprojResolveAssemblyReference.cache

@@ -5,22 +5,31 @@
 
     <link rel="icon" href="images/favicon.ico">
     <title>Medihere</title>
-
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
     <link href="app/styles/introLoader.min.css" rel="stylesheet" />
-    <link href="app/styles/animate.css" rel="stylesheet" />
-    <link href="app/styles/bootstrap.min.css" rel="stylesheet" />
-    <link href="app/styles/datepicker.css" rel="stylesheet" />
-    <link href="app/styles/font-awesome.min.css" rel="stylesheet" />
-    <link href="app/styles/owl.carousel.css" rel="stylesheet" />
-    <link href="app/styles/style.css" rel="stylesheet" />
 
+    <link href="app/styles/animate.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet" type="text/css"/>
+    <link href="app/styles/datepicker.css" rel="stylesheet" />
+    
+    <link href="app/styles/style.css" rel="stylesheet" />
+    <link href="app/styles/Site.css" rel="stylesheet" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700,800,600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300,500' rel='stylesheet' type='text/css'>
+    
 
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>	
+    
     <script src="app/scripts/vendor/modernizr.js"></script>
+    
 </head>
-<body ng-app="mainApp">
+
+<body ng-app="app">
     <main id="wrapper">
+        
         <div id="element" class="introLoading"></div>
         <header id="header" class="navbar-fixed-top">
             <div id="header-wrap">
@@ -37,19 +46,19 @@
                                 </button>
                                 <!-- Logo ============================================= -->
                                 <div id="logo">
-                                    <a href="index.html" class="medihere-logo"><img src="app/images/logo.jpg" alt="medihere Logo" title="medihere"></a>
+                                    <a href="#/" class="medihere-logo"><img src="app/images/logo.jpg" alt="medihere Logo" title="medihere"></a>
                                 </div>
                                 <!-- #logo end -->
                             </div>
-
+                          
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <!-- unordered list starts here -->
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li><a class="active" href="index.html">home</a></li>
-                                    <li><a href="about.html">about us</a></li>
-                                    <li><a href="services.html">Our services</a></li>
-                                    <li><a href="blog.html">our Blog</a></li>
-                                    <li><a href="contact.html">contact us</a></li>
+                                    <li><a class="active" href="#/">home</a></li>
+                                    <li><a href="#about">about us</a></li>
+                                    <li><a href="#services">Our services</a></li>
+                                    <li><a href="#feedback">FeedBack</a></li>
+                                    <li><a href="#contact">contact us</a></li>
                                 </ul>
                             </div>
                             <!-- /.navbar-collapse -->
@@ -59,17 +68,74 @@
                 </div>
             </div>
         </header>
+        <div ng-view></div>
+        
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
 
+                        <div class="col-md-6 footer-widget2">
+                            <h3>Contact Information</h3>
+                            <span>153 panam Street, New York gulistan 420 </span>
+                            <br>
+                            <span>United States</span>
+                            <br>
+                            <span>info@medihere.com</span>
+                            <br>
+                            <span>+52890588934</span>
+
+                            <div class="footer-socials">
+                                <h4>Get in touch</h4>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="maincont">
+                            <div class="col-md-6 footer-widget2">
+                                <h3>Leave a Message</h3>
+                                <form action="?" method="post">
+                                    <input name="name" type="text" placeholder="Name" required>
+                                    <input name="email" type="email" placeholder="Email" required>
+                                    <textarea name="message" rows="7" placeholder="Message" required></textarea>
+                                    <input type="submit" value="Send Now">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="back-top">
+                <a class="back-top" href="#slider"><i class="fa fa-angle-up"></i></a>
+            </div>
+            <div class="footer-bottom text-center">
+                <p>Copyright &copy; 2016. All rights Reserved</p>
+            </div>
+        </footer>
+        
     </main>
-
-    <script src="app/scripts/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="app/scripts/vendor/datepicker.js"></script>
-    <script src="app/scripts/vendor/html5shiv.js"></script>
-    <script src="app/scripts/vendor/jquery-2.1.1.js"></script>
-    <script src="app/scripts/vendor/jquery.introLoader.pack.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="app/scripts/vendor/owl.carousel.js"></script>
+    <script src="app/scripts/vendor/smoothscroll.js"></script>
+    <script src="app/scripts/vendor/jquery.introLoader.pack.min.js"></script>
+    
+
+    <script src="app/scripts/vendor/html5shiv.js"></script>
     <script src="app/scripts/vendor/respond.min.js"></script>
     <script src="app/scripts/vendor/script.js"></script>
-    <script src="app/scripts/vendor/smoothscroll.js"></script>
+    
+    <script src="app/scripts/app.js"></script>
+    <script src="app/scripts/controllers/HomeController.js"></script>
+    <script src="app/scripts/controllers/AboutController.js"></script>
+    <script src="app/scripts/controllers/ServiceController.js"></script>
+    <script src="app/scripts/controllers/ContactController.js"></script>
+    <script src="app/scripts/controllers/FeedbackController.js"></script>
+
 </body>
 </html>
