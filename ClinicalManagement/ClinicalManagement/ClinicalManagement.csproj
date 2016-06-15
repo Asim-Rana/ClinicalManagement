@@ -95,6 +95,45 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\images\about.jpg" />
+    <Content Include="app\images\appointment.jpg" />
+    <Content Include="app\images\caption-bg.jpg" />
+    <Content Include="app\images\favicon.ico" />
+    <Content Include="app\images\hospital.jpg" />
+    <Content Include="app\images\logo.jpg" />
+    <Content Include="app\images\news1.jpg" />
+    <Content Include="app\images\news2.jpg" />
+    <Content Include="app\images\news3.jpg" />
+    <Content Include="app\images\news4.jpg" />
+    <Content Include="app\images\news5.jpg" />
+    <Content Include="app\images\news6.jpg" />
+    <Content Include="app\images\newsletter-bg.jpg" />
+    <Content Include="app\images\patient1.jpg" />
+    <Content Include="app\images\patient2.jpg" />
+    <Content Include="app\images\patient3.jpg" />
+    <Content Include="app\images\patient4.jpg" />
+    <Content Include="app\images\service-icons\service-1.png" />
+    <Content Include="app\images\service-icons\service-2.png" />
+    <Content Include="app\images\service-icons\service-3.png" />
+    <Content Include="app\images\service-icons\service-4.png" />
+    <Content Include="app\images\service-icons\service-5.png" />
+    <Content Include="app\images\service-icons\service-6.png" />
+    <Content Include="app\images\service-icons\service-1w.png" />
+    <Content Include="app\images\service-icons\service-2w.png" />
+    <Content Include="app\images\service-icons\service-3w.png" />
+    <Content Include="app\images\service-icons\service-4w.png" />
+    <Content Include="app\images\service-icons\service-5w.png" />
+    <Content Include="app\images\service-icons\service-6w.png" />
+    <Content Include="app\images\service.jpg" />
+    <Content Include="app\images\slide.jpg" />
+    <Content Include="app\images\slide1.jpg" />
+    <Content Include="app\images\slide2.jpg" />
+    <Content Include="app\images\slide3.jpg" />
+    <Content Include="app\images\team-member1.jpg" />
+    <Content Include="app\images\team-member2.jpg" />
+    <Content Include="app\images\team-member3.jpg" />
+    <Content Include="app\images\team-member4.jpg" />
+    <Content Include="app\images\team-member5.jpg" />
     <Content Include="app\scripts\app.js" />
     <Content Include="app\scripts\controllers\AboutController.js" />
     <Content Include="app\scripts\controllers\ContactController.js" />
@@ -147,7 +186,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\images\" />
     <Folder Include="app\scripts\services\" />
   </ItemGroup>
   <PropertyGroup>

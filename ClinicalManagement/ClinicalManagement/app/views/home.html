@@ -109,51 +109,11 @@
                     <div class="row">
                         <div class="col-md-12 single-services">
                             <!-- service 1 -->
-                            <div class="col-md-6 col-sm-6">
-                                <div class="single-service service-1">
-                                    <span></span>
-                                    <h3>heart checkup</h3>
-                                    <p>Lorem ipsum dolor sit amet.</p>
-                                </div>
-                            </div>
-                            <!-- service 2 -->
-                            <div class="col-md-6 col-sm-6">
-                                <div class="single-service service-2">
-                                    <span></span>
-                                    <h3>dental care</h3>
-                                    <p>Lorem ipsum dolor sit amet.</p>
-                                </div>
-                            </div>
-                            <!-- service 3 -->
-                            <div class="col-md-6 col-sm-6">
-                                <div class="single-service service-3">
-                                    <span></span>
-                                    <h3>ear treatment</h3>
-                                    <p>Lorem ipsum dolor sit amet.</p>
-                                </div>
-                            </div>
-                            <!-- service 4 -->
-                            <div class="col-md-6 col-sm-6">
-                                <div class="single-service service-4">
-                                    <span></span>
-                                    <h3>emergency care</h3>
-                                    <p>Lorem ipsum dolor sit amet.</p>
-                                </div>
-                            </div>
-                            <!-- service 5 -->
-                            <div class="col-md-6 col-sm-6">
-                                <div class="single-service service-5">
-                                    <span></span>
-                                    <h3>gen treatment</h3>
-                                    <p>Lorem ipsum dolor sit amet.</p>
-                                </div>
-                            </div>
-                            <!-- service 6 -->
-                            <div class="col-md-6 col-sm-6">
-                                <div class="single-service service-6">
-                                    <span></span>
-                                    <h3>DNA testing</h3>
-                                    <p>Lorem ipsum dolor sit amet.</p>
+                            <div ng-repeat="service in services" ng-init="backImage = service.image;hover=false" ng-mouseover="backImage=service.replaceImage;hover=true" ng-mouseleave="backImage=service.image;hover=false" class="col-md-6 col-sm-6">
+                                <div class="single-service service-1" ng-class="{changeColor : hover}">
+                                    <span  ng-style="{'background-image':'url('+ backImage +')'}" ></span>
+                                    <h3>{{service.title}}</h3>
+                                    <p>{{service.detail}}</p>
                                 </div>
                             </div>
                         </div>

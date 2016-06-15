@@ -2,64 +2,64 @@
     $(document).ready(function () {
         
         //Preloader JS
-        $("#element").introLoader();
+        //$("#element").introLoader();
 
         //active nav
-        var pgurl = window.location.href.substr(window.location.href
-            .lastIndexOf("/") + 1);
-        $(".navbar-default .navbar-nav>li>a").each(function () {
-            if ($(this).attr("href") == pgurl || $(this).attr("href") == '')
-                $(this).addClass("active");
-        });
+        //var pgurl = window.location.href.substr(window.location.href
+        //    .lastIndexOf("/") + 1);
+        //$(".navbar-default .navbar-nav>li>a").each(function () {
+        //    if ($(this).attr("href") == pgurl || $(this).attr("href") == '')
+        //        $(this).addClass("active");
+        //});
         // fixed header
-        $(window).scroll(function () {
+        //$(window).scroll(function () {
 
-            var scroll_nav = $(window).scrollTop();
+        //    var scroll_nav = $(window).scrollTop();
 
-            if (scroll_nav >= 20) {
-                $("#logo a img").css({
-                    "padding": "0px"
-                });
-                $(".navbar-nav>li>a").css({
-                    "padding-top": "20px",
-                    "padding-bottom": "20px"
-                });
-                $(".navbar-toggle").css({
-                    "margin-top": "10px"
-                });
-            } else {
-                $("#logo a img").css({
-                    "padding": "10px 0"
-                });
-                $(".navbar-nav>li>a").css({
-                    "padding-top": "29px",
-                    "padding-bottom": "29px"
-                });
-                $(".navbar-toggle").css({
-                    "margin-top": "20px"
-                });
-            }
-        });
+        //    if (scroll_nav >= 20) {
+        //        $("#logo a img").css({
+        //            "padding": "0px"
+        //        });
+        //        $(".navbar-nav>li>a").css({
+        //            "padding-top": "20px",
+        //            "padding-bottom": "20px"
+        //        });
+        //        $(".navbar-toggle").css({
+        //            "margin-top": "10px"
+        //        });
+        //    } else {
+        //        $("#logo a img").css({
+        //            "padding": "10px 0"
+        //        });
+        //        $(".navbar-nav>li>a").css({
+        //            "padding-top": "29px",
+        //            "padding-bottom": "29px"
+        //        });
+        //        $(".navbar-toggle").css({
+        //            "margin-top": "20px"
+        //        });
+        //    }
+        //});
 
-        //service section
-        $(".single-service").mouseover(function () {
-            $(this).find("h3").css({
-                "color": "#fff"
-            });
-            $(".single-service p").css({
-                "color": "#000"
-            });
-            $(this).find("span").stop().addClass("span-hover");
-        });
-        $(".single-service").mouseout(function () {
-            $(this).find("h3").css({
-                "color": "#2B96CC"
-            });
-            $(".single-service p").css({
-                "color": "#707070"
-            });
-            $(this).find("span").stop().removeClass("span-hover");
-        });
+        ////service section
+        //$(".single-service").mouseover(function () {
+        //    $(this).find("h3").css({
+        //        "color": "#fff"
+        //    });
+        //    $(".single-service p").css({
+        //        "color": "#000"
+        //    });
+        //    $(this).find("span").stop().addClass("span-hover");
+        //});
+        //$(".single-service").mouseout(function () {
+        //    $(this).find("h3").css({
+        //        "color": "#2B96CC"
+        //    });
+        //    $(".single-service p").css({
+        //        "color": "#707070"
+        //    });
+        //    $(this).find("span").stop().removeClass("span-hover");
+        //});
 
         //owl carousel for team section
         var owl = $("#team-slide");
