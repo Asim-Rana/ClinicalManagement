@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\scripts\directives\OwlCarouselDirective.js" />
     <Content Include="app\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="app\images\about.jpg" />
     <Content Include="app\images\appointment.jpg" />
@@ -140,6 +141,8 @@
     <Content Include="app\scripts\controllers\FeedbackController.js" />
     <Content Include="app\scripts\controllers\HomeController.js" />
     <Content Include="app\scripts\controllers\ServiceController.js" />
+    <Content Include="app\scripts\services\clinicalService.js" />
+    <Content Include="app\scripts\services\DoctorService.js" />
     <Content Include="app\scripts\vendor\ai.0.15.0-build58334.js" />
     <Content Include="app\scripts\vendor\ai.0.15.0-build58334.min.js" />
     <Content Include="app\scripts\vendor\bootstrap.min.js" />
@@ -166,6 +169,8 @@
     <Content Include="app\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="app\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="app\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="app\json\clinicalServiceData.json" />
+    <Content Include="app\json\doctorsData.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -176,7 +181,6 @@
   <ItemGroup>
     <Content Include="app\styles\datepicker.css" />
     <Content Include="app\styles\introLoader.min.css" />
-    <Content Include="app\styles\owl.carousel.css" />
     <Content Include="app\styles\Site.css" />
     <Content Include="app\styles\style.css" />
     <Content Include="index.html" />
@@ -185,9 +189,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="app\scripts\services\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

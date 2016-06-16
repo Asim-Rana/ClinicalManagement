@@ -1,0 +1,38 @@
+﻿[
+  {
+    "title": "heartcheckup",
+    "detail": "Lorem ipsum dolor sit amet.",
+    "image": "app/images/service-icons/service-1.png",
+    "replaceImage": "app/images/service-icons/service-1w.png"
+  },
+  {
+    "title": "dental care",
+    "detail": "Lorem ipsum dolor sit amet.",
+    "image": "app/images/service-icons/service-2.png",
+    "replaceImage": "app/images/service-icons/service-2w.png"
+  },
+  {
+    "title": "ear treatment",
+    "detail": "Lorem ipsum dolor sit amet.",
+    "image": "app/images/service-icons/service-3.png",
+    "replaceImage": "app/images/service-icons/service-3w.png"
+  },
+  {
+    "title": "emergency care",
+    "detail": "Lorem ipsum dolor sit amet.",
+    "image": "app/images/service-icons/service-4.png",
+    "replaceImage": "app/images/service-icons/service-4w.png"
+  },
+  {
+    "title": "gen treatment",
+    "detail": "Lorem ipsum dolor sit amet.",
+    "image": "app/images/service-icons/service-5.png",
+    "replaceImage": "app/images/service-icons/service-5w.png"
+  },
+  {
+    "title": "DNA testing",
+    "detail": "Lorem ipsum dolor sit amet.",
+    "image": "app/images/service-icons/service-6.png",
+    "replaceImage": "app/images/service-icons/service-6w.png"
+  }
+]

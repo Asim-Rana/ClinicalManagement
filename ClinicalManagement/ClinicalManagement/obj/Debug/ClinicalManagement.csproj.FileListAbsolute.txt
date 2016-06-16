@@ -63,4 +63,3 @@ C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\Clin
 C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\obj\Debug\ClinicalManagement.dll
 C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\obj\Debug\ClinicalManagement.pdb
-C:\Users\asim.irshad\Documents\GitHub\ClinicalManagement\ClinicalManagement\ClinicalManagement\obj\Debug\ClinicalManagement.csprojResolveAssemblyReference.cache
