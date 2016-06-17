@@ -62,25 +62,25 @@
         //});
 
         //owl carousel for team section
-        var owl = $("#team-slide");
+        //var owl = $("#team-slide");
 
-        owl.owlCarousel({
-            navigation: true,
-            pagination: false,
-            items: 3
+        //owl.owlCarousel({
+        //    navigation: true,
+        //    pagination: false,
+        //    items: 3
 
-        });
+        //});
 
         //owl carousel for about section
-        $("#about-content").owlCarousel({
+        //$("#about-content").owlCarousel({
 
-            navigation: true,
-            slideSpeed: 300,
-            paginationSpeed: 400,
-            singleItem: true,
-            items: 1,
+        //    navigation: true,
+        //    slideSpeed: 300,
+        //    paginationSpeed: 400,
+        //    singleItem: true,
+        //    items: 1,
 
-        });
+        //});
 
 
         //panel

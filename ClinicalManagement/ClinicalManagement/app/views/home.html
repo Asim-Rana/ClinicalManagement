@@ -181,51 +181,26 @@
                     <h2>Meet our amazing team members</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, praesentium fugiat, laborum neque ex nemo nisi nesciunt quae eum quod.</p>
                 </div>
-                <!--<div class="row">-->
-                    <!--<div class="col-md-12">-->
-                        <owl-carousel class="owl-carousel" data-options="{navigation: true, pagination: false, items : 1}">
-                            <div owl-carousel-item="" ng-repeat="doctor in doctors">
-                                <div class="col-md-3 col-sm-3">
-                                    <div id="team-slide">
-                                        <div class="item">
-
-                                            <div class="member-image">
-                                                <img ng-src="{{doctor.image}}" alt="medihere Team Member">
-                                                <div class="item-cap">
-                                                    <div class="item-socials">
-                                                        <a class="fb" href="#"><i class="fa fa-facebook"></i></a>
-                                                        <a class="tt" href="#"><i class="fa fa-twitter"></i></a>
-                                                        <a class="gp" href="#"><i class="fa fa-google-plus"></i></a>
-                                                    </div>
-                                                    <a class="btn btn-info" href="member-detail.html">View Profile</a>
-                                                </div>
-                                            </div>
-                                            <h3>{{doctor.name}}</h3>
-                                            <h4>{{doctor.speciality}}</h4>
-                                        </div>
+                <div id="team-slide">
+                    <owl-carousel class="owl-carousel" data-options="{navigation: true, pagination: false, items : 3}">
+                        <div owl-carousel-item="" ng-repeat="doctor in ::doctors" class="item">
+                            <div class="member-image">
+                                <img ng-src="{{::doctor.image}}" alt="medihere Team Member">
+                                <div class="item-cap">
+                                    <div class="item-socials">
+                                        <a class="fb" href="#"><i class="fa fa-facebook"></i></a>
+                                        <a class="tt" href="#"><i class="fa fa-twitter"></i></a>
+                                        <a class="gp" href="#"><i class="fa fa-google-plus"></i></a>
                                     </div>
+                                    <a class="btn btn-info" href="member-detail.html">View Profile</a>
                                 </div>
                             </div>
-                        </owl-carousel>
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div id="team-slide" class="owl-carousel">
-                    <div class="item" ng-repeat="doctor in doctors">
-                        <div class="member-image">
-                            <img ng-src= "{{doctor.image}}" alt="medihere Team Member">
-                            <div class="item-cap">
-                                <div class="item-socials">
-                                    <a class="fb" href="#"><i class="fa fa-facebook"></i></a>
-                                    <a class="tt" href="#"><i class="fa fa-twitter"></i></a>
-                                    <a class="gp" href="#"><i class="fa fa-google-plus"></i></a>
-                                </div>
-                                <a class="btn btn-info" href="member-detail.html">View Profile</a>
-                            </div>
+                            <h3>{{::doctor.name}}</h3>
+                            <h4>{{::doctor.speciality}}</h4>
                         </div>
-                        <h3>{{doctor.name}}</h3>
-                        <h4>{{doctor.speciality}}</h4>
-                    </div>   
-                </div>-->
+                    </owl-carousel>
+                </div>
+                    
             </div>
         </div>
     </section>
