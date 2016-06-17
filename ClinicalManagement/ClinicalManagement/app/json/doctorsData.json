@@ -1,13 +1,15 @@
 ﻿[
   {
+    "id" :  1,
     "name": "Dr. M. A. Kulsum",
-    "speciality": "Dental Specialist.",
+    "speciality": "Dental Specialist",
     "education": "M.B.B.S, F.C.P.S.",
     "experience": "15 years",
     "training": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ducimus, harum, rerum sapiente quo sint aut libero vel fugiat, sequi nihil reiciendis maxime laboriosam praesentium atque quidem blanditiis necessitatibus quia voluptates, quos. Harum molestiae, facere dicta quis perspiciatis ipsa dolorum atque nam, distinctio, nesciunt eligendi sit non ad saepe qui!",
     "image": "app/images/team-member3.jpg"
   },
   {
+    "id" :  2,
     "name": "Jubaida Banu",
     "speciality": "Orthopaedics",
     "education": "M.B.B.S, F.C.P.S.",
@@ -16,6 +18,7 @@
     "image": "app/images/team-member2.jpg"
   },
   {
+    "id" :  3,
     "name": "John Smith",
     "speciality": "Cardiology",
     "education": "M.B.B.S, F.C.P.S.",
@@ -24,6 +27,7 @@
     "image": "app/images/team-member1.jpg"
   },
   {
+    "id" :  4,
     "name": "D. P. Jorina",
     "speciality": "Neurology",
     "education": "M.B.B.S, F.C.P.S.",
@@ -32,6 +36,7 @@
     "image": "app/images/team-member4.jpg"
   },
   {
+    "id" :  5,
     "name": "M. C. Jalil",
     "speciality": "Haematology",
     "education": "M.B.B.S, F.C.P.S.",

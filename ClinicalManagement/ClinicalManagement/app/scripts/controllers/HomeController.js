@@ -5,6 +5,7 @@ controllers.controller('HomeController', ['$scope', '$http', 'clinicalService', 
     
     var tempServices = [];
     var docList = [];
+
     clinicalService.query(function (outputServices) {
         angular.forEach(outputServices, function (service) {
             tempServices.push(service);
@@ -12,37 +13,15 @@ controllers.controller('HomeController', ['$scope', '$http', 'clinicalService', 
 
         $scope.services = tempServices;
     });
-    DoctorService.query(function (doctors) {
-        angular.forEach(doctors, function (doctor) {
-            docList.push(doctor);
-        });
-
-        $scope.doctors = docList;
-    });
+    DoctorService.getDoctors()
+            .success(function (docs) {
+                $scope.doctors = docs;
+            })
+            .error(function (error) {
+                $scope.status = 'Unable to load doctors data: ' + error.message;
+            });
     
     $scope.$on('$viewContentLoaded', function () {
-
-        //owl carousel for team section
-        //var owl = $("#team-slide");
-
-        //owl.owlCarousel({
-        //    navigation: true,
-        //    pagination: false,
-        //    items: 3
-
-        //});
-
-        //owl carousel for about section
-        //$("#about-content").owlCarousel({
-
-        //    navigation: true,
-        //    slideSpeed: 300,
-        //    paginationSpeed: 400,
-        //    singleItem: true,
-        //    items: 1,
-
-        //});
-
 
         //panel
         function toggleChevron(e) {

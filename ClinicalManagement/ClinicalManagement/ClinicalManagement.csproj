@@ -141,8 +141,8 @@
     <Content Include="app\scripts\controllers\FeedbackController.js" />
     <Content Include="app\scripts\controllers\HomeController.js" />
     <Content Include="app\scripts\controllers\ServiceController.js" />
-    <Content Include="app\scripts\services\clinicalService.js" />
-    <Content Include="app\scripts\services\DoctorService.js" />
+    <Content Include="app\scripts\factories\ClinicalFactory.js" />
+    <Content Include="app\scripts\factories\DoctorFactory.js" />
     <Content Include="app\scripts\vendor\ai.0.15.0-build58334.js" />
     <Content Include="app\scripts\vendor\ai.0.15.0-build58334.min.js" />
     <Content Include="app\scripts\vendor\bootstrap.min.js" />
@@ -189,7 +189,9 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="app\views\partials\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

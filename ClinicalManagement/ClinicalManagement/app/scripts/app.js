@@ -5,7 +5,7 @@ mainApp.config([
     function ($routeProvider) {
         
         $routeProvider.
-            when('/', {
+            when('/home', {
                 templateUrl : 'app/views/home.html',
                 controller: 'HomeController'
             })
@@ -28,13 +28,13 @@ mainApp.config([
                 controller: 'FeedbackController'
             })
             .otherwise({
-                redirectTo: '/'
+                redirectTo: '/home'
             });
         }
 ]);
 mainApp.controller('mainController', function ($scope , $location) {
     $scope.items = [
-      {path: '/', title: 'home'},
+      {path: '/home', title: 'home'},
       {path: '/about', title: 'about us'},
       {path: '/services', title: 'our services'},
       {path: '/feedback', title: 'feedback'},
