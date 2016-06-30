@@ -255,8 +255,15 @@ a.carousel-control.left {
     -ms-transition: all .5s ease 0s;
     top: 50%;
 }
-a.carousel-control i.fa {
+a.carousel-control span.glyphicon-chevron-left {
     font-weight: bold;
+    margin-left:-15px;
+    margin-top:-15px;
+}
+a.carousel-control span.glyphicon-chevron-right {
+    font-weight: bold;
+    margin-right:-13px;
+    margin-top:-15px;
 }
 a.carousel-control:hover {
     background: #2b96cc;
@@ -662,9 +669,13 @@ a.ui-datepicker-next span {
 .service-tb h4 a:focus {
     text-decoration: none;
 }
-.panel-heading {
+
+.panel-default>.panel-heading
+{
     padding: 0;
+    background-color:white;
 }
+
 .faq-heading i.glyphicon {
     color: #2B96CC;
 }
@@ -1809,4 +1820,3 @@ span.heading-nav a:hover {
         padding-bottom: 20px !important;
     }
 }
-

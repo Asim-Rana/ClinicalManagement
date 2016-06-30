@@ -1,5 +1,5 @@
-(function ($) {
-    $(document).ready(function () {
+//(function ($) {
+//    $(document).ready(function () {
         
         //Preloader JS
         //$("#element").introLoader();
@@ -84,35 +84,35 @@
 
 
         //panel
-        function toggleChevron(e) {
-            $(e.target)
-                .prev('.faq-heading')
-                .find("i.indicator")
-                .toggleClass('glyphicon-plus glyphicon-minus');
-        }
-        $('.panel-group').on('hidden.bs.collapse', toggleChevron);
-        $('.panel-group').on('shown.bs.collapse', toggleChevron);
+        //function toggleChevron(e) {
+        //    $(e.target)
+        //        .prev('.faq-heading')
+        //        .find("i.indicator")
+        //        .toggleClass('glyphicon-plus glyphicon-minus');
+        //}
+        //$('.panel-group').on('hidden.bs.collapse', toggleChevron);
+        //$('.panel-group').on('shown.bs.collapse', toggleChevron);
 
         //back top animantion
-        $('#back-top a[href*="#"]:not([href="#"])').click(function () {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html, body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
+        //$('#back-top a[href*="#"]:not([href="#"])').click(function () {
+        //    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        //        var target = $(this.hash);
+        //        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        //        if (target.length) {
+        //            $('html, body').animate({
+        //                scrollTop: target.offset().top
+        //            }, 1000);
+        //            return false;
+        //        }
+        //    }
+        //});
 
 
 
         // Date picker
-        $("#datepicker").datepicker();
+        //$("#datepicker").datepicker();
 
 
-    }); //ready
+//    }); //ready
 
-})(jQuery);
+//})(jQuery);

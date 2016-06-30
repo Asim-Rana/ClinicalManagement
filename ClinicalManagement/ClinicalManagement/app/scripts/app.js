@@ -1,4 +1,4 @@
-﻿var mainApp = angular.module('app', ['ngRoute', 'controllers' , 'services' , 'directives']);
+﻿var mainApp = angular.module('app', ['ngRoute', 'ngAnimate', 'ui.bootstrap', 'controllers', 'services', 'directives']);
 
 mainApp.config([
     '$routeProvider',
@@ -32,7 +32,7 @@ mainApp.config([
             });
         }
 ]);
-mainApp.controller('mainController', function ($scope , $location) {
+mainApp.controller('mainController', function ($scope, $location, $anchorScroll) {
     $scope.items = [
       {path: '/home', title: 'home'},
       {path: '/about', title: 'about us'},
@@ -46,9 +46,13 @@ mainApp.controller('mainController', function ($scope , $location) {
         }
         return false;
     };
-    angular.element(document).ready(function () {
-        $("#element").introLoader();
-    });
+    //angular.element(document).ready(function () {
+    //    $("#element").introLoader();
+    //});
+    $scope.gotoTop = function () {
+        $location.hash('slider');
+        $anchorScroll();
+    };
 });
 
 mainApp.directive('scrollNav', function ($window) {
