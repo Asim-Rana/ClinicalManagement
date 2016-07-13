@@ -1,7 +1,14 @@
-﻿var clinicalServices = angular.module('services', ['ngResource']);
-clinicalServices.factory('clinicalService', ['$resource',
-  function ($resource) {
-      return $resource('app/json/clinicalServiceData.json', {}, {
-          query: { method: 'GET', params: {}, isArray: true }
-      });
+﻿var clinicalFactories = angular.module('factories', ['ngResource']);
+clinicalFactories.factory('clinicalFactory', ['$http',
+  function ($http) {
+      var urlBase = 'app/json/clinicalServiceData.json';
+
+      var clinicService = {};
+
+      clinicService.getClinicalServices = function () {
+
+          return $http.get(urlBase);
+
+      };
+      return clinicService;
   }]);

@@ -6,9 +6,9 @@ directives.directive("owlCarousel", function () {
         link: function (scope) {
             scope.initCarousel = function (element) {
                
-                var customOptions = scope.$eval(element.attr('data-options'));
+                var customOptions = scope.$eval($(element).attr('data-options'));
                 
-                element.owlCarousel(customOptions);
+                $(element).owlCarousel(customOptions);
             };
         }
     };

@@ -5,7 +5,7 @@
 //      });
 //  }]);
 
-clinicalServices.factory('DoctorService', ['$http',
+clinicalFactories.factory('DoctorFactory', ['$http',
   function ($http) 
   {   
       var urlBase = 'app/json/doctorsData.json';

@@ -1,5 +1,5 @@
-﻿var controllers = angular.module('controllers' , []);
-controllers.controller('HomeController', ['$scope', '$http', 'clinicalService', 'DoctorService', function ($scope, $http, clinicalService , DoctorService) {
+﻿var controllers = angular.module('controllers', []);
+controllers.controller('HomeController', ['$scope', '$http', 'clinicalFactory', 'DoctorFactory', 'ReviewsFactory', function ($scope, $http, clinicalFactory, DoctorFactory, ReviewsFactory) {
 
     $scope.slides = [
     {id:0 , image: 'app/images/slide.jpg', description: 'Image 00', title: 'Welcome to Medihere center', detail: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ipsa quod maxime laudantium cum sapiente.', read: '#' },
@@ -32,14 +32,15 @@ controllers.controller('HomeController', ['$scope', '$http', 'clinicalService', 
         opened: false
     };
 
-    clinicalService.query(function (outputServices) {
-        angular.forEach(outputServices, function (service) {
-            tempServices.push(service);
-        });
-
-        $scope.services = tempServices;
-    });
-    DoctorService.getDoctors()
+    clinicalFactory.getClinicalServices()
+            .success(function (servs) {
+                $scope.services = servs;
+                $scope.servicesStatus = true;
+            })
+            .error(function (error) {
+                $scope.servicesStatus = false;
+            });
+    DoctorFactory.getDoctors()
             .success(function (docs) {
                 $scope.doctors = docs;
                 $scope.status = true;
@@ -47,21 +48,13 @@ controllers.controller('HomeController', ['$scope', '$http', 'clinicalService', 
             .error(function (error) {
                 $scope.status = false;
             });
-    
-    $scope.$on('$viewContentLoaded', function () {
-
-        //back top animantion
-        //$('#back-top a[href*="#"]:not([href="#"])').click(function () {
-        //    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-        //        var target = $(this.hash);
-        //        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        //        if (target.length) {
-        //            $('html, body').animate({
-        //                scrollTop: target.offset().top
-        //            }, 1000);
-        //            return false;
-        //        }
-        //    }
-        //});
-    });
+    ReviewsFactory.getReviews()
+            .success(function (review) {
+                $scope.reviews = review;
+                $scope.reviewStatus = true;
+            })
+            .error(function (error) {
+                $scope.reviewStatus = false;
+            });
+    $scope.Gender = ["Male" , "Female" , "Child" , "Other"];
 }]);

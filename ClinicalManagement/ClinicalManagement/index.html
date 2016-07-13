@@ -8,6 +8,8 @@
    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-bootstrap-lightbox/0.12.0/angular-bootstrap-lightbox.css" />
+    <!--<link href="app/styles/angular-lightbox.css" rel="stylesheet" />-->
     <!--<link href="Content/ui-bootstrap-csp.css" rel="stylesheet" />-->
     <link href="app/styles/introLoader.min.css" rel="stylesheet" />
 
@@ -28,12 +30,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-resource.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
     <script src="app/scripts/vendor/modernizr.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-bootstrap-lightbox/0.12.0/angular-bootstrap-lightbox.js"></script>
+    <!--<script src="app/scripts/vendor/angular-lightbox.js"></script>-->
 </head>
 
-<body ng-app="app" ng-controller="mainController">
+<body ng-app="app" ng-controller="MainController" id="back">
     <main id="wrapper">
         
+        <!--<div ng-hide="pageLoaded" class="preloader">
+            
+        </div>-->
         <!--<div id="element" class="introLoading"></div>-->
         <header id="header" class="navbar-fixed-top" scroll-nav>
             <div id="header-wrap">
@@ -68,7 +74,7 @@
                 </div>
             </div>
         </header>
-        <div ng-view></div>
+        <div ng-view ng-cloak></div>
         
         <footer class="footer">
             <div class="footer-top">
@@ -113,7 +119,7 @@
                 <a class="back-top" href="#slider"><i class="fa fa-angle-up"></i></a>
             </div>-->
             <div id="back-top">
-                <a class="back-top" ng-click="gotoTop()"><i class="fa fa-angle-up"></i></a>
+                <a class="back-top" ng-click="gotoElement('back')" smooth-scroll duration="1800" easing="easeInQuint"><i class="fa fa-angle-up"></i></a>
             </div>
 
             <div class="footer-bottom text-center">
@@ -122,9 +128,8 @@
         </footer>
         
     </main>
-    <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
-    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
-    <!--<script src="app/scripts/vendor/owl.carousel.js"></script>-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="app/scripts/vendor/owl.carousel.js"></script>
     <!--<script src="app/scripts/vendor/smoothscroll.js"></script>-->
     <!--<script src="app/scripts/vendor/jquery.introLoader.pack.min.js"></script>-->
 
@@ -134,7 +139,6 @@
 
     <script src="app/scripts/vendor/html5shiv.js"></script>
     <script src="app/scripts/vendor/respond.min.js"></script>
-    <script src="app/scripts/vendor/script.js"></script>
     
     <script src="app/scripts/app.js"></script>
     <script src="app/scripts/controllers/HomeController.js"></script>
@@ -144,6 +148,7 @@
     <script src="app/scripts/controllers/FeedbackController.js"></script>
     <script src="app/scripts/factories/ClinicalFactory.js"></script>
     <script src="app/scripts/factories/DoctorFactory.js"></script>
+    <script src="app/scripts/factories/ReviewsFactory.js"></script>
     <script src="app/scripts/directives/OwlCarouselDirective.js"></script>
 
 </body>

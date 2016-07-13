@@ -1,0 +1,30 @@
+﻿[
+  {
+    "id" :  1,
+    "name": "Luis PK",
+    "designation": "CEO, Ghurar dim",
+    "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ducimus, harum, rerum sapiente quo sint aut libero vel fugiat, sequi nihil reiciendis maxime laboriosam praesentium atque quidem blanditiis necessitatibus quia voluptates, quos. Harum molestiae, facere dicta quis perspiciatis ipsa dolorum atque nam, distinctio, nesciunt eligendi sit non ad saepe qui!",
+    "image": "app/images/patient1.jpg"
+  },
+  {
+    "id" :  2,
+    "name": "Apod A, M",
+    "designation": "President, T E O center",
+    "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ducimus, harum, rerum sapiente quo sint aut libero vel fugiat, sequi nihil reiciendis maxime laboriosam praesentium atque quidem blanditiis necessitatibus quia voluptates, quos. Harum molestiae, facere dicta quis perspiciatis ipsa dolorum atque nam, distinctio, nesciunt eligendi sit non ad saepe qui!",
+    "image": "app/images/patient2.jpg"
+  },
+  {
+    "id" :  3,
+    "name": "Kate Bouche",
+    "designation": "Accountant, J Y Association",
+    "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ducimus, harum, rerum sapiente quo sint aut libero vel fugiat, sequi nihil reiciendis maxime laboriosam praesentium atque quidem blanditiis necessitatibus quia voluptates, quos. Harum molestiae, facere dicta quis perspiciatis ipsa dolorum atque nam, distinctio, nesciunt eligendi sit non ad saepe qui!",
+    "image": "app/images/patient3.jpg"
+  },
+  {
+    "id" :  4,
+    "name": "Tomas D L",
+    "designation": "MD, F P Magnatic",
+    "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ducimus, harum, rerum sapiente quo sint aut libero vel fugiat, sequi nihil reiciendis maxime laboriosam praesentium atque quidem blanditiis necessitatibus quia voluptates, quos. Harum molestiae, facere dicta quis perspiciatis ipsa dolorum atque nam, distinctio, nesciunt eligendi sit non ad saepe qui!",
+    "image": "app/images/patient4.jpg"
+  }
+]
