@@ -1,5 +1,6 @@
-﻿var directives = angular.module('directives', []);
-directives.directive("owlCarousel", function () {
+﻿'use strict';
+angular.module('app')
+    .directive("owlCarousel", function () {
     return {
         restrict: 'E',
         transclude: false,

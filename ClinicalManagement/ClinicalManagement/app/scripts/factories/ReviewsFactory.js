@@ -1,4 +1,6 @@
-﻿clinicalFactories.factory('ReviewsFactory', ['$http',
+﻿'use strict';
+angular.module('app')
+    .factory('ReviewsFactory', ['$http',
   function ($http) {
       var urlBase = 'app/json/reviewsData.json';
 

@@ -1,5 +1,6 @@
-﻿var clinicalFactories = angular.module('factories', ['ngResource']);
-clinicalFactories.factory('clinicalFactory', ['$http',
+﻿'use strict';
+angular.module('app')
+    .factory('clinicalFactory', ['$http',
   function ($http) {
       var urlBase = 'app/json/clinicalServiceData.json';
 

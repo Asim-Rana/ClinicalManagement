@@ -1,3 +1,91 @@
 ﻿<div ng-controller="FeedbackController">
-    <p>{{message}}</p>
+    <section id="banner" class="banner text-center">
+        <div class="container">
+            <div class="row">
+                <h1>Medihere Feedback</h1>
+                <p>Thank you for taking the time to fill in our online feedback form. By providing us your feedback, you are helping us understand what we do well and what improvements we need to implement.</p>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container abcontainer">
+            <div class="page-nav">
+                <span class="heading-nav"><a href="#/">Home</a> | FeedBack</span>
+            </div>
+            <div class="row text-center">
+                <h2>Your FeedBack</h2>
+                <div class="feedback">
+                    <form class="form-horizontal" name="feedbackForm" novalidate>
+                        <div class="form-group" ng-class="{ 'has-error' : feedbackForm.name.$error.required && !feedbackForm.name.$pristine }">
+                            <label class="control-label col-sm-2" for="name">Your Name:</label>
+                            <div class="col-sm-4">
+                                <input name="name" type="text" placeholder="Enter Your Name" class="form-control" ng-model="feedback.name" required>
+                                <span ng-show="feedbackForm.name.$error.required && !feedbackForm.name.$pristine" class="help-block">Your Name is required</span>
+                            </div>
+                        </div>
+                        <div class="form-group" ng-class="{ 'has-error' : feedbackForm.designation.$error.required && !feedbackForm.designation.$pristine }">
+                            <label class="control-label col-sm-2" for="desig">Your Designation:</label>
+                            <div class="col-sm-4">   
+                                <input name="designation" type="text" placeholder="Enter Your Designation" class="form-control" ng-model="feedback.designation" required>
+                                <span ng-show="feedbackForm.designation.$error.required && !feedbackForm.designation.$pristine" class="help-block">Your Designation is required</span>
+                            </div>
+                        </div>
+                        
+                        <p class="stmt">How much satisfied were you with?</p>
+                        
+                        <div class="options">
+                            <ul>
+                                <li class="col-xs-3 col-sm-2 col-sm-offset-4">Excellent</li>
+                                <li class="col-xs-3 col-sm-2">Good</li>
+                                <li class="col-xs-3 col-sm-2">Satisfactory</li>
+                                <li class="col-xs-3 col-sm-2">Don't Know</li>
+                            </ul>
+                        </div>
+                        <div class="feedbackQues form-group">
+                            <ul ng-repeat="quest in feedbackQuestions" >
+                                <li class="col-sm-4">{{quest.question}}</li>
+                                <li class="col-sm-2 col-xs-3 radioStyle">
+                                    <div class="radio radio-info radio-inline">
+                                        <input type="radio" id="inlineRadio1" value="Excellent" name="{{quest.id}}" required/>
+                                        <label></label>
+                                    </div>
+                                </li>
+                                <li class="col-sm-2 col-xs-3 radioStyle">
+                                    <div class="radio radio-info radio-inline">
+                                        <input type="radio" id="inlineRadio1" value="Good" name="{{quest.id}}"/>
+                                        <label></label>
+                                    </div>
+                                </li>
+                                <li class="col-sm-2 col-xs-3 radioStyle">
+                                    <div class="radio radio-info radio-inline">
+                                        <input type="radio" id="inlineRadio1" value="Satisfactory" name="{{quest.id}}"/>
+                                        <label></label>
+                                    </div>
+                                </li>
+                                <li class="col-sm-2 col-xs-3 radioStyle">
+                                    <div class="radio radio-info radio-inline">
+                                        <input type="radio" id="inlineRadio1" value="Dont Know" name="{{quest.id}}"/>
+                                        <label></label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="stmt comments">Feel free to add any other comments or suggestions:</p>
+                        <div class="form-group" style="margin-top:10px;margin-bottom:25px">
+                            <div class="col-sm-6 comments">
+                                <textarea name="comment" placeholder="Your Comments" class="form-control" rows="7"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-4 col-sm-4 feedbackbtn">
+                                <button type="submit" class="btn" value="Submit" ng-disabled="feedbackForm.$invalid">Send Feedback</button>
+                            </div>
+                        </div>
+                        
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
 </div>

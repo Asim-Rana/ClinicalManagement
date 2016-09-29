@@ -1,4 +1,6 @@
-﻿controllers.controller('AboutController', ['$scope', 'DoctorFactory', 'clinicalFactory' , 'Lightbox' , function ($scope, DoctorFactory, clinicalFactory, Lightbox) {
+﻿'use strict';
+angular.module('app')
+    .controller('AboutController', ['$scope', 'DoctorFactory', 'clinicalFactory' , 'Lightbox' , function ($scope, DoctorFactory, clinicalFactory, Lightbox) {
     DoctorFactory.getDoctors()
             .success(function (docs) {
                 $scope.doctors = docs;

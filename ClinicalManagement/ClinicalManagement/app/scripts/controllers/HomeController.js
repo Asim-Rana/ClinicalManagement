@@ -1,5 +1,6 @@
-﻿var controllers = angular.module('controllers', []);
-controllers.controller('HomeController', ['$scope', '$http', 'clinicalFactory', 'DoctorFactory', 'ReviewsFactory', function ($scope, $http, clinicalFactory, DoctorFactory, ReviewsFactory) {
+﻿'use strict';
+angular.module('app')
+    .controller('HomeController', ['$scope', '$http', 'clinicalFactory', 'DoctorFactory', 'ReviewsFactory', function ($scope, $http, clinicalFactory, DoctorFactory, ReviewsFactory) {
 
     $scope.slides = [
     {id:0 , image: 'app/images/slide.jpg', description: 'Image 00', title: 'Welcome to Medihere center', detail: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ipsa quod maxime laudantium cum sapiente.', read: '#' },
@@ -56,5 +57,6 @@ controllers.controller('HomeController', ['$scope', '$http', 'clinicalFactory', 
             .error(function (error) {
                 $scope.reviewStatus = false;
             });
-    $scope.Gender = ["Male" , "Female" , "Child" , "Other"];
+    $scope.Gender = ["Male", "Female", "Child", "Other"];
+    $scope.phoneRegex = '^(\\+92)\\d{3}\\d{7}$';
 }]);

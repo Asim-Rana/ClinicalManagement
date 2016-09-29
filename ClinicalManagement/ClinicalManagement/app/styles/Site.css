@@ -106,4 +106,123 @@
     padding-bottom:20px;
     border-bottom: 2px solid #EEE;
 }
+.feedback{
+    border: 2px solid #EEE;
+    padding:20px;
+    border-radius:5px;
+}
+.options{
+    background-color:#f8f8f8;
+    
+    padding-bottom:30px;
+    margin-top:25px;
+    margin-bottom:25px;
+    padding-top:18px;
+}
+.stmt{
+    margin-top:20px;
+    
+    text-align:left;
+    font-size:20px;
+    font-weight:bold;
+}
+.feedbackQues li{
+    margin-bottom:50px;
+    text-align:left;
+}
 
+
+@media only screen 
+and (min-width : 600px) {
+    .radioStyle {
+    padding-left:80px;
+  }
+}
+@media only screen 
+and (min-width : 600px) {
+    .comments {
+    margin-left:13px;
+  }
+}
+.feedbackbtn button
+{
+    background-color:#2b96cc;
+    color:white;
+}
+.feedbackbtn button:hover{
+    color:white;
+    background-color:#3E5B69;
+}
+.img-rounded {
+    width:120px;
+    height:90px;
+    line-height: 20px; 
+    margin-bottom: 7px;
+    overflow:hidden;
+    word-break:normal;
+}
+.footerLinks li a
+{
+    color:#aaa;
+}
+.footerLinks li a:hover
+{
+    color:white;
+}
+.contact .icons {
+    margin-top: 30px;
+}
+.contact .icons i.fa {
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    padding: 7px;
+    color: #2B96CC;
+    background: transparent;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    transition: all .5s ease 0s;
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    -ms-transition: all .5s ease 0s;
+}
+.contact .icons i.fa:hover {
+    color: #fff;
+    background: #2B96CC;
+    border-color: #2B96CC;
+}
+.contact .icons span{
+    padding-left: 15px;
+    padding-bottom: 25px;
+}
+#map{
+    height:500px;  
+    box-shadow: 3px 3px 10px gray;
+    }
+#repeat{ 
+     display: inline;
+     }
+#country_container { 
+     width: 1000px; 
+     margin: 13px 3px 3px 0px; 
+     text-align: center; 
+     width: 85px; 
+     padding: 4px; 
+     display: inline-table;  
+     color: white; 
+     background-color: black; 
+     font-size: 12px; 
+     cursor: pointer;
+     border: 1px solid black; 
+     border-radius:13px; 
+     }
+#country_container:hover { 
+     box-shadow: 0px 0px 10px black;
+     background-color: gray; 
+     border: 1px solid gray; 
+     cursor: pointer; 
+     }
+#names { 
+     cursor: pointer; 
+       }

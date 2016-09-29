@@ -104,6 +104,7 @@
     <Content Include="app\images\clinic6.jpg" />
     <Content Include="app\images\clinictiming.png" />
     <Content Include="app\images\preloader.gif" />
+    <Content Include="app\scripts\controllers\MainController.js" />
     <Content Include="app\scripts\directives\OwlCarouselDirective.js" />
     <Content Include="app\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="app\images\about.jpg" />
@@ -151,9 +152,12 @@
     <Content Include="app\scripts\controllers\FeedbackController.js" />
     <Content Include="app\scripts\controllers\HomeController.js" />
     <Content Include="app\scripts\controllers\ServiceController.js" />
+    <Content Include="app\scripts\directives\ScrollNavDirective.js" />
     <Content Include="app\scripts\factories\ClinicalFactory.js" />
     <Content Include="app\scripts\factories\DoctorFactory.js" />
+    <Content Include="app\scripts\factories\FeedbackFactory.js" />
     <Content Include="app\scripts\factories\ReviewsFactory.js" />
+    <Content Include="app\scripts\services\SmoothScrollService.js" />
     <Content Include="app\scripts\vendor\ai.0.15.0-build58334.js" />
     <Content Include="app\scripts\vendor\ai.0.15.0-build58334.min.js" />
     <Content Include="app\scripts\vendor\bootstrap.min.js" />
@@ -174,6 +178,7 @@
     <Content Include="app\views\partials\_services.html" />
     <Content Include="app\views\partials\_slider.html" />
     <Content Include="app\views\services.html" />
+    <Content Include="Content\build.css" />
     <Content Include="Content\ui-bootstrap-csp.css" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -186,6 +191,7 @@
     <Content Include="app\json\clinicalServiceData.json" />
     <Content Include="app\json\doctorsData.json" />
     <Content Include="app\json\reviewsData.json" />
+    <Content Include="app\json\feedbackQuestions.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -208,9 +214,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="app\scripts\services\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
@@ -230,7 +234,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>2466</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:2466/</IISUrl>
+          <IISUrl>http://localhost:3000/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

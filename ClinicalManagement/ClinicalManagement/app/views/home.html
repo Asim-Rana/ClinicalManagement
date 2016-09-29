@@ -27,46 +27,83 @@
             <div class="col-md-6">
                 <uib-tabset>
                     <uib-tab index="0" heading="Appointment">
-                        <form class="form-horizontal">
+                        <form class="form-horizontal" name="appointmentForm" novalidate>
                             <!-- first name -->
-                            <div class="col-md-6 col-sm-6">
-                                <input name="first_name" type="text" placeholder="First Name" class="form-control" ng-model="patData.fname" required>
+                            <div class="form-group" ng-class="{ 'has-error' : appointmentForm.name.$error.required && !appointmentForm.name.$pristine }">
+                                <label class="control-label col-sm-3" for="name">Your Name:</label>
+                                <div class="col-sm-6 col-sm-offset-1">
+                                    <input name="name" type="text" placeholder="Enter Your Name" class="form-control" ng-model="patData.name" required>
+                                    <span ng-show="appointmentForm.name.$error.required && !appointmentForm.name.$pristine" class="help-block">Your Name is required.</span>
+                                </div>
                             </div>
-                            <div class="col-md-6 col-sm-6">
-                                <select name="gender" class="form-control" ng-model="patData.doctor" >
-                                    <option ng-repeat="doctor in doctors" value="doctor.name" selected>{{doctor.name}}</option>
-                                </select>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3" for="doctor">Select Doctor:</label>
+                                <div class="col-sm-6 col-sm-offset-1">
+                                    <select name="doctor" class="form-control" ng-model="patData.doctor">
+                                        <option ng-repeat="doctor in doctors" value="doctor.name" selected>{{doctor.name}}</option>
+                                    </select>
+                                </div>
                             </div>
                             
                             <!-- email address -->
-                            <div class="col-md-6 col-sm-6">
-                                <input name="email" type="email" placeholder="Email" class="form-control" ng-model="patData.email" required>
+                            <div class="form-group" ng-class="{ 'has-error' : (appointmentForm.email.$invalid || appointmentForm.email.$error.required) && !appointmentForm.email.$pristine }">
+                                <label class="control-label col-sm-3" for="email">Your Email:</label>
+                                <div class="col-sm-6 col-sm-offset-1">
+                                    <input name="email" type="email" placeholder="Enter Your Email" class="form-control" ng-model="patData.email" required>
+                                    <span ng-show="(appointmentForm.email.$invalid ||
+                                        appointmentForm.email.$error.required) &&
+                                        !appointmentForm.email.$pristine"
+                                          class="help-block">Enter a valid email address.</span>
+                                </div>
                             </div>
-                            <div class="col-md-6 col-sm-6">
-                                <input name="phone" type="text" placeholder="Mobile Number" class="form-control" ng-model="patData.phone" required>
+                            <div class="form-group" ng-class="{ 'has-error' : (appointmentForm.phone.$error.pattern || appointmentForm.phone.$error.required) && !appointmentForm.phone.$pristine }">
+                                <label class="control-label col-sm-3" for="phone">Your Phone:</label>
+                                <div class="col-sm-6 col-sm-offset-1">
+                                    <input name="phone" type="text" placeholder="+923244013397" class="form-control" ng-model="patData.phone" ng-pattern="phoneRegex" required>
+                                    <span ng-show="(appointmentForm.phone.$error.pattern ||
+                                        appointmentForm.phone.$error.required) &&
+                                        !appointmentForm.phone.$pristine"
+                                          class="help-block">Enter a valid phone no.</span>
+                                </div>
                             </div>
-                            <div class="col-md-6 col-sm-6">
-                                <input name="age" type="number" placeholder="Age" min="0" class="form-control" ng-model="patData.age" required>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3" for="phone">Your Age:</label>
+                                <div class="col-sm-6 col-sm-offset-1">
+                                    <input name="age" type="number" placeholder="Age" min="1" class="form-control" ng-model="patData.age" required>
+                                    <span ng-show="invalidInputSelection" class="help-block">Enter your age.</span>
+                                </div>
                             </div>
-                            <div class="col-md-6 col-sm-6">
-                                <input name="address" type="text" placeholder="Address" class="form-control" ng-model="patData.address" required>
+                            <div class="form-group" ng-class="{ 'has-error' : appointmentForm.address.$error.required && !appointmentForm.address.$pristine }">
+                                <label class="control-label col-sm-3" for="phone">Your Address:</label>
+                                <div class="col-sm-6 col-sm-offset-1">
+                                    <input name="address" type="text" placeholder="Address" class="form-control" ng-model="patData.address" required>
+                                    <span ng-show="appointmentForm.address.$error.required && !appointmentForm.address.$pristine" class="help-block">Your Address is required.</span>
+                                </div>
                             </div>
-                            <div class="col-md-6 col-sm-6">
-                                <p class="input-group">
-                                    <input type="text" class="form-control" uib-datepicker-popup placeholder="YYYY-MM-DD" ng-model="patData.date" is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" />
-                                    <span class="input-group-btn">
-                                        <button type="button" class="btn btn-default" ng-click="open2()"><i class="glyphicon glyphicon-calendar"></i></button>
-                                    </span>
-                                </p>
+                            
+                            <div class="form-group">
+                                <label class="control-label col-sm-3" for="phone">Your Gender:</label>
+                                <div class="col-sm-6 col-sm-offset-1">
+                                    <select name="gender" class="form-control" ng-model="patData.gend">
+                                        <option ng-repeat="gen in Gender" value="gen">{{gen}}</option>
+                                    </select>
+                                    <span ng-show="invalidInputSelection" class="help-block">Select Your Gender.</span>
+                                </div>
                             </div>
-
-                            <div class="col-md-6 col-sm-6">
-                                <select name="gender" class="form-control" ng-model="patData.gend">
-                                    <option ng-repeat="gen in Gender" value="gen">{{gen}}</option>
-                                </select>
+                            <div class="form-group">
+                                <label class="control-label col-sm-4" for="phone">Appointment Date:</label>
+                                <div class="col-sm-6">
+                                    <p class="input-group">
+                                        <input type="text" class="form-control" uib-datepicker-popup placeholder="YYYY-MM-DD" ng-model="patData.date" is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" />
+                                        <span class="input-group-btn">
+                                            <button type="button" class="btn btn-default" ng-click="open2()"><i class="glyphicon glyphicon-calendar"></i></button>
+                                        </span>
+                                    </p>
+                                    <span ng-show="invalidInputSelection" class="help-block">Select appointment Date.</span>
+                                </div>
                             </div>
-                            <div class="col-md-12">
-                                <input type="submit" value="submit" class="form-control">
+                            <div class="col-sm-10" style="margin-top:-20px;float:right">
+                                <input type="submit" value="submit" ng-disabled="appointmentForm.$invalid" class="form-control">
                             </div>
                         </form>
                     </uib-tab>

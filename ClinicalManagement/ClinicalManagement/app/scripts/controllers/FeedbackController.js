@@ -1,3 +1,10 @@
-﻿controllers.controller('FeedbackController' , ['$scope', function ($scope) {
-    $scope.message = "hello  from feedback controller";
+﻿'use strict';
+angular.module('app')
+    .controller('FeedbackController', ['$scope', 'FeedbackFactory', function ($scope, FeedbackFactory) {
+    FeedbackFactory.getFeedbackQuestions()
+            .success(function (ques) {
+                $scope.feedbackQuestions = ques;
+            })
+            .error(function (error) {
+            });
 }]);

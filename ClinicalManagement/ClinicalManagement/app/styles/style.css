@@ -1209,7 +1209,8 @@ ul.popular-posts li span {
 }
 .footer-bottom {
     background: #13709E;
-    padding: 20px 0;
+    padding: 40px;
+    padding-top:25px;
     color: #aaa;
 }
 

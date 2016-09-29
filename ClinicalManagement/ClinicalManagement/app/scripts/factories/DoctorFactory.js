@@ -5,7 +5,9 @@
 //      });
 //  }]);
 
-clinicalFactories.factory('DoctorFactory', ['$http',
+'use strict';
+angular.module('app')
+    .factory('DoctorFactory', ['$http',
   function ($http) 
   {   
       var urlBase = 'app/json/doctorsData.json';

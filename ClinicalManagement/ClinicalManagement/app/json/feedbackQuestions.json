@@ -1,0 +1,18 @@
+﻿[
+  {
+    "id": 1,
+    "question": "How do you rate our services"
+  },
+  {
+    "id": 2,
+    "question": "What are you feeling after visiting this clinic"
+  },
+  {
+    "id": 3,
+    "question": "Is medical staff is helpful"
+  },
+  {
+    "id": 4,
+    "question": "How do you rate the skills of our doctors"
+  }
+]
